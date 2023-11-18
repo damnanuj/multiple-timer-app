@@ -107,7 +107,7 @@
 
 
 
-.activeTimmers {
+.activeTimers {
     height: 100%;
     width: 100%;
     /* background-color: pink; */
@@ -118,7 +118,7 @@
 
 }
 
-.activeTimmers::-webkit-scrollbar {
+.activeTimers::-webkit-scrollbar {
     display: none;
     /* width of the entire scrollbar */
 }
@@ -128,7 +128,7 @@
     font-weight: 500;
 }
 
-.countdownTimers {
+.timeLeft {
     /* background-color: coral; */
     font-size: 22px;
     letter-spacing: 7px;

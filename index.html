@@ -14,11 +14,11 @@
         <div class="setTime">
           <p>Set Time:</p>
           <div class="inputFields">
-            <input type="text" class="hour" placeholder="hrs" />
-            <input type="text" class="minutes" placeholder="min" />
-            <input type="text" class="second" placeholder="sec" />
+            <input type="number"  min="0" value="0" class="hours" placeholder="hrs" />
+             <input type="number"  min="0" value="0"class="minutes" placeholder="min" />
+            <input type="number" min="0" value="0" class="seconds" placeholder="sec" />
           </div>
-          <p class="set">Set</p>
+          <p onclick="setTimer()" class="set">Set</p>
         </div>
 
         <!--Timers titile -->
@@ -27,12 +27,12 @@
         </div>
 
         <!-- All Active TImers  -->
-        <div class="activeTimmers">
-          <div class="active">
+        <div class="activeTimers">
+          <!-- <div class="active">
             <p>Time Left:</p>
-            <p class="countdownTimers">00 : 15 : 29</p>
+            <p class="timeLeft">00 : 15 : 29</p>
             <p class="delete">Delete</p>
-          </div>
+          </div> -->
           
         </div>
       </div>
