@@ -18,6 +18,10 @@ function setTimer() {
 
   if (totalTimeInSeconds > 0) {
     createTimer(totalTimeInSeconds);
+    // making input field to 0
+    document.querySelector(".hours").value = '0';
+    document.querySelector(".minutes").value = '0';
+    document.querySelector(".seconds").value = '0';
   } else {
     alert("Please enter a valid time.");
   }
