@@ -57,14 +57,20 @@ function createTimer(totalTimeInSeconds) {
     if (timeRemaining === 0) {
       clearInterval(timerInterval);
       timeLeft.textContent = "Time Up!";
+      playTone();
 
-      // Add your code to play alert music here
     }
 
     timeRemaining--;
   }
 
-  updateTimerDisplay(); // Display initial time
+  updateTimerDisplay(); // Displaying initial time
 
   let timerInterval = setInterval(updateTimerDisplay, 1000);
+}
+
+// Playing the alert tone
+function playTone() {
+  let tone = document.getElementById('tone');
+  tone.play();
 }
